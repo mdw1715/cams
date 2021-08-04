@@ -1,6 +1,5 @@
 // Route imports
-import Home from "./components/HelloWorld.vue";
-import About from "./components/About.vue";
+import Home from "./views/HelloWorld.vue";
 import UserForm from "./views/UserForm.vue";
 import AreaForm from "./views/AreaForm.vue";
 import AssetForm from "./views/AssetForm.vue";
@@ -10,10 +9,6 @@ export const routes = [
   {
     path: "",
     component: Home,
-  },
-  {
-    path: "/about",
-    component: About,
   },
   {
     path: "/userform",
