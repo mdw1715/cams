@@ -1,8 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <h1>Critical Asset Management System</h1>
-      <hr />
       <nav-bar></nav-bar>
       <router-view></router-view>
     </div>

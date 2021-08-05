@@ -1,16 +1,40 @@
 <template>
   <div>
-    <b-nav pills>
-      <b-nav-item to="/" active-class="active" exact>Home</b-nav-item>
-      <b-nav-item to="/userform" active-class="active">User Form</b-nav-item>
-      <b-nav-item to="/areaform" active-class="active">Area Form</b-nav-item>
-      <b-nav-item to="/assetform" active-class="active">Asset Form</b-nav-item>
-    </b-nav>
+    <v-toolbar dense>
+      <v-toolbar-title>
+        <h3>Critical Asset Management System</h3>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <v-btn elevation="0"
+          v-for="item in navItems"
+          :key="item.title"
+          :to="item.path">
+          {{ item.title }}
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "NavBar",
+  data() {
+    return {
+      navItems: [
+        { title: "Home", path: "/" },
+        { title: "User Form", path: './userform' },
+        { title: "Area Form", path: "/areaform" },
+        { title: "Asset Form", path: "/assetform" },
+      ],
+    };
+  },
+};
 </script>
 
-<style></style>
+<style>
+.v-tabs-bar {
+  float: right !important;
+}
+</style>
