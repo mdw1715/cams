@@ -6,10 +6,12 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn elevation="0"
+        <v-btn
+          elevation="0"
           v-for="item in navItems"
           :key="item.title"
-          :to="item.path">
+          :to="item.path"
+        >
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
@@ -24,7 +26,7 @@ export default {
     return {
       navItems: [
         { title: "Home", path: "/" },
-        { title: "User Form", path: './userform' },
+        { title: "User Form", path: "/userform" },
         { title: "Area Form", path: "/areaform" },
         { title: "Asset Form", path: "/assetform" },
       ],
