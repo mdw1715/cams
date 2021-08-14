@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>User Registration</v-card-title>
-    
+
     <v-card-text>
       <v-form ref="userForm" @submit.prevent="submit">
         <v-container fluid>
@@ -73,7 +73,6 @@
         </v-container>
       </v-form>
     </v-card-text>
-
     <v-card-actions>
       <v-btn color="primary">Register</v-btn>
     </v-card-actions>
@@ -94,11 +93,3 @@ export default {
 </script>
 
 <style></style>
-
-<!--          <v-text-field
-                v-model="userForm.first"
-                :rules="rules.name"
-                color="purple darken-2"
-                label="First name"
-                required
-              ></v-text-field> -->
