@@ -29,6 +29,7 @@ export default {
         { title: "User Form", path: "/userform" },
         { title: "Area Form", path: "/areaform" },
         { title: "Asset Form", path: "/assetform" },
+        { title: "Reports", path: "/reports"}
       ],
     };
   },
