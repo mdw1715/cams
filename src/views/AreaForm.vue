@@ -44,7 +44,7 @@
           <v-row>
             <v-col>
               <v-select
-                :items="testList"
+                :items="hazardList"
                 :menu-props="{ maxHeight: '400' }"
                 label="Hazards Applicable Today:"
                 multiple
@@ -56,7 +56,7 @@
           <v-row>
             <v-col>
               <v-select
-                :items="testList"
+                :items="hazardList"
                 :menu-props="{ maxHeight: '400' }"
                 label="Hazard History (Optional):"
                 multiple
@@ -68,7 +68,7 @@
           <v-row>
             <v-col>
               <v-select
-                :items="testList"
+                :items="hazardList"
                 :menu-props="{ maxHeight: '400' }"
                 label="Hazards Applicable in the Future:"
                 multiple
@@ -105,6 +105,28 @@ export default {
       maxPopulation: 10,
       maxExtent: 7,
       testList: ["option 1", "option 2", "option 3"],
+      hazardList: [
+        "Earthquakes and Aftershocks",
+        "Volcanos (incl. lahars, pyroclastic flows, volcanic activity)",
+        "Landslides (incl. post wildfire landslides) and Avalanches",
+        "Hurricanes, Typhoons, or Cyclones",
+        "Tropical/Extra Tropical of other extreme storms",
+        "Coast Storm Surge",
+        "Pluvial and Fluvial Flooding",
+        "\"Sunny Day\" Tidal Flooding",
+        "Tornadoes, Derechos, Micro-Bursts",
+        "Lightning Strikes",
+        "Wildfires",
+        "Drought",
+        "Geologic Sink Holes",
+        "Pest Infestations",
+        "Famine",
+        "High Temperature Event",
+        "Low Temperature Event",
+        "Cyber Attack or Failure",
+        "Other Terrorism",
+        "Industrial Accident (Emissions, Releases, Spills, Ect.)"
+      ],
     };
   },
 };

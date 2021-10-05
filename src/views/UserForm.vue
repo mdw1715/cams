@@ -11,7 +11,7 @@
               <v-text-field
                 color="purple darken-2"
                 :counter="max"
-                label="First Name:"
+                label="Your First Name:"
                 required
               ></v-text-field>
             </v-col>
@@ -19,7 +19,7 @@
               <v-text-field
                 color="purple darken-2"
                 :counter="max"
-                label="Last Name:"
+                label="Your Last Name:"
                 required
               ></v-text-field>
             </v-col>
@@ -50,6 +50,7 @@
           </v-row>
 
           <!-- Phone Number -->
+          <!-- TODO: Include Country Code -->
           <v-row>
             <v-col cols="12" sm="6">
               <v-text-field
@@ -70,6 +71,8 @@
               ></v-text-field>
             </v-col>
           </v-row>
+
+          <!-- TODO: Other contact methods or preferences -->
         </v-container>
       </v-form>
     </v-card-text>
